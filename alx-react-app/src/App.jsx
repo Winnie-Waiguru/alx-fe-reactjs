@@ -16,7 +16,7 @@ function App() {
         </a>
       </div>
       <WelcomeMessage />
-      <UserProfile name="Winnie" age="10" bio="Loves coding." />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
     </>
   );
 }
