@@ -2,6 +2,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import WelcomeMessage from "./components/WelcomeMessage";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         </a>
       </div>
       <WelcomeMessage />
+      <UserProfile name="Winnie" age="10" bio="Loves coding." />
     </>
   );
 }
