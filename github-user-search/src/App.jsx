@@ -1,9 +1,10 @@
 import "./App.css";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
-      <h1>GitHub User Search Application</h1>
+      <Main />
     </>
   );
 }
