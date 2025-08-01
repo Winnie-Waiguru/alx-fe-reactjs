@@ -34,7 +34,7 @@ function Search() {
   return (
     <div>
       <h1>GitHub User Search Application</h1>
-      <form className="searchForm " onSubmit={handleSubmit}>
+      <form id="login" className="searchForm " onSubmit={handleSubmit}>
         <input
           className="searchBar"
           type="search"
