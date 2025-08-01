@@ -3,6 +3,8 @@ import { fetchUserData } from "../services/githubService";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [locationFilter, setLocationFilter] = useState("");
+  const [repositoryFilter, setRepositoryFilter] = useState("");
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -20,12 +22,16 @@ function Search() {
     setError("");
 
     try {
-      const data = await fetchUserData(searchTerm);
+      const data = await fetchUserData(
+        searchTerm,
+        locationFilter,
+        repositoryFilter
+      );
       setUserData(data);
       setError("");
     } catch (err) {
       setError(`User not found:${err}`);
-      setUserData();
+      setUserData("");
     } finally {
       setIsLoading(false);
     }
@@ -38,10 +44,26 @@ function Search() {
         <input
           className="searchBar"
           type="search"
-          name="search-input"
           id="search-input"
+          placeholder="Github username"
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
+        />
+        <input
+          className="searchBar"
+          type="search"
+          id="location-input"
+          placeholder="location"
+          value={locationFilter}
+          onChange={(event) => setLocationFilter(event.target.value)}
+        />
+        <input
+          className="searchBar"
+          type="search"
+          id="repository-input"
+          placeholder="Number of repositories"
+          value={repositoryFilter}
+          onChange={(event) => setRepositoryFilter(event.target.value)}
         />
         <button type="submit" className="search-btn">
           Search

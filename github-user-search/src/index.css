@@ -14,7 +14,6 @@
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
@@ -27,7 +26,7 @@ h1 {
 
 .searchForm {
   max-width: 800px;
-  height: 200px;
+  height: 300px;
 }
 
 .searchBar,
@@ -43,6 +42,7 @@ h1 {
 .searchBar {
   width: 100%;
   border: 1px solid grey;
+  margin-top: 10px;
   transition: border-color 0.25s;
 }
 .searchBar:hover {
