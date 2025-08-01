@@ -38,7 +38,7 @@ function Search() {
   }
 
   return (
-    <div>
+    <div className=" container p-4">
       <h1>GitHub User Search Application</h1>
       <form id="login" className="searchForm " onSubmit={handleSubmit}>
         <input
@@ -50,7 +50,7 @@ function Search() {
           onChange={(event) => setSearchTerm(event.target.value)}
         />
         <input
-          className="searchBar"
+          className="searchBar "
           type="search"
           id="location-input"
           placeholder="location"
