@@ -1,6 +1,6 @@
 import axios from "axios";
-const searchApiUrl = "https://api.github.com/search/users?q=";
-const usersApiUrl = "https://api.github.com/users/";
+const searchApiUrl = import.meta.env.VITE_APP_GITHUB_API_SEARCH_KEY;
+const usersApiUrl = import.meta.env.VITE_APP_GITHUB_API_KEY;
 
 export async function fetchUserData(userName, location = "", minRepos = 0) {
   let query = encodeURIComponent(userName);
@@ -32,7 +32,6 @@ export async function fetchUserData(userName, location = "", minRepos = 0) {
     let promiseFeedback = await Promise.all(userDetailsPromises);
     const result = promiseFeedback.map((detailPromise) => detailPromise.data);
 
-    // console.log(result);
     return result;
   } catch (err) {
     console.log(err); //testing purpose

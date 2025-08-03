@@ -46,6 +46,7 @@ function Search() {
           type="search"
           id="search-input"
           placeholder="Github username"
+          autoComplete="off"
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
         />
@@ -54,6 +55,7 @@ function Search() {
           type="search"
           id="location-input"
           placeholder="location"
+          autoComplete="off"
           value={locationFilter}
           onChange={(event) => setLocationFilter(event.target.value)}
         />
@@ -62,6 +64,7 @@ function Search() {
           type="search"
           id="repository-input"
           placeholder="Number of repositories"
+          autoComplete="off"
           value={repositoryFilter}
           onChange={(event) => setRepositoryFilter(event.target.value)}
         />
