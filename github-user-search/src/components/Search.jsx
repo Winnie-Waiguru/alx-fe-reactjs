@@ -71,14 +71,18 @@ function Search() {
       </form>
       {isLoading && <p>Loading...</p>}
       {error && <p> Looks like we cant find the user</p>}
-      {userData && (
-        <div className="data-box">
-          <img className="avatar" src={userData.avatar_url} alt="user-avatar" />
-          <h3>Name: {userData.name}</h3>
-          <p>
-            <strong>Bio:</strong> {userData.bio || "No bio"}
-          </p>
-        </div>
+      {userData && userData.length > 0 && (
+        <ul>
+          {userData.map((item) => (
+            <li className="data-box" key={item.id}>
+              <img className="avatar" src={item.avatar_url} alt="user-avatar" />
+              <h3>Name: {item.name}</h3>
+              <p>
+                <strong>Bio:</strong> {item.bio || "No bio"}
+              </p>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
