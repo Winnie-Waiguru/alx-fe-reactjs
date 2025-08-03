@@ -34,7 +34,6 @@ export async function fetchUserData(userName, location = "", minRepos = 0) {
 
     return result;
   } catch (err) {
-    console.log(err); //testing purpose
-    throw err;
+    return { error: "Something went wrong", details: err.message };
   }
 }
