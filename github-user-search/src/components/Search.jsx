@@ -80,6 +80,9 @@ function Search() {
               <p>
                 <strong>Bio:</strong> {item.bio || "No bio"}
               </p>
+              <p>
+                <a href={item.html_url}>{item.name} GitHub Account</a>
+              </p>
             </li>
           ))}
         </ul>

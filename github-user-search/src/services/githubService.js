@@ -32,6 +32,7 @@ export async function fetchUserData(userName, location = "", minRepos = 0) {
     let promiseFeedback = await Promise.all(userDetailsPromises);
     const result = promiseFeedback.map((detailPromise) => detailPromise.data);
 
+    // console.log(result);
     return result;
   } catch (err) {
     console.log(err); //testing purpose
