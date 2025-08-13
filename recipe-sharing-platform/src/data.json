@@ -3,12 +3,87 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Carbonara",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta or bacon",
+      "2 large eggs",
+      "50g grated Parmesan cheese",
+      "1 clove garlic (optional)",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Boil the spaghetti in salted water until al dente.",
+      "Fry the pancetta or bacon until crispy; add garlic if desired.",
+      "Whisk together eggs and Parmesan in a bowl.",
+      "Drain pasta, reserving some cooking water.",
+      "Quickly toss hot pasta with bacon and egg-cheese mixture, adding reserved water if needed.",
+      "Serve immediately with extra Parmesan and black pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150?text=Tikka+Masala",
+    "ingredients": [
+      "500g boneless chicken",
+      "150g plain yogurt",
+      "2 tbsp tikka masala paste",
+      "2 tbsp butter",
+      "200ml tomato puree",
+      "100ml cream",
+      "Salt and spices to taste"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and tikka masala paste for at least 1 hour.",
+      "Grill or pan-fry chicken until cooked through.",
+      "Melt butter in a pan, add tomato puree and cook for 5 minutes.",
+      "Add cream and simmer.",
+      "Add chicken to sauce, stir well, and cook for another 5 minutes.",
+      "Serve hot with rice or naan."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir-Fry",
+    "summary": "A quick, colorful mix of vegetables stir-fried with soy sauce and garlic.",
+    "image": "https://via.placeholder.com/150?text=Stir+Fry",
+    "ingredients": [
+      "1 cup broccoli florets",
+      "1 cup sliced carrots",
+      "1 cup bell peppers, sliced",
+      "2 cloves garlic, minced",
+      "2 tbsp soy sauce",
+      "1 tbsp vegetable oil"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large skillet.",
+      "Add garlic and sauté for 30 seconds.",
+      "Add all vegetables and stir-fry for 5 minutes.",
+      "Pour in soy sauce and cook for 2 more minutes.",
+      "Serve hot with rice or noodles."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Beef Tacos",
+    "summary": "Crispy taco shells filled with seasoned beef, cheese, and fresh toppings.",
+    "image": "https://via.placeholder.com/150?text=Beef+Tacos",
+    "ingredients": [
+      "250g ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "1 cup shredded cheese",
+      "1 cup shredded lettuce",
+      "Diced tomatoes and onions"
+    ],
+    "instructions": [
+      "Cook ground beef in a skillet until browned.",
+      "Add taco seasoning and a splash of water, simmer for 5 minutes.",
+      "Warm taco shells according to package instructions.",
+      "Fill shells with beef, cheese, lettuce, tomatoes, and onions.",
+      "Serve immediately."
+    ]
   }
 ]
