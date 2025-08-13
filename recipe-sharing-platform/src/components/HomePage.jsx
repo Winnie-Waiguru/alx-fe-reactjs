@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
+import jsonData from "../data.json";
 
 function HomePage() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/data.json");
-        console.log(response);
-        const jsonData = await response.json();
-        console.log(jsonData);
-        setData(jsonData);
-      } catch (error) {
-        console.log(`Error fetching Data: ${error}`);
-      }
-    };
-    fetchData();
+    setData(jsonData);
   }, []);
 
   return (
