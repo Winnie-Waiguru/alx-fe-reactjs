@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import jsonData from "../data.json";
 
 function HomePage() {
   const [data, setData] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setData(jsonData);
   }, []);
-
-  function handleClick(id) {
-    navigate(`/recipe/${id}`);
-  }
 
   return (
     <div className="p-8">
@@ -22,11 +16,12 @@ function HomePage() {
             <li
               key={item.id}
               className="p-8 bg-orange-100 md:p-3 rounded-2xl font-sans text-left hover:shadow-xl"
-              onClick={() => handleClick(item.id)}
             >
-              <img src={item.image} alt="" />
-              <h2 className="text-xl font-bold">{item.title}</h2>
-              <p>{item.summary}</p>
+              <Link to={`/recipe/${item.id}`}>
+                <img src={item.image} alt={item.title} />
+                <h2 className="text-xl font-bold">{item.title}</h2>
+                <p>{item.summary}</p>
+              </Link>
             </li>
           ))}
       </ul>
