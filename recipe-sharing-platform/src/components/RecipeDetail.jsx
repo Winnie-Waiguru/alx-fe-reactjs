@@ -18,7 +18,7 @@ function RecipeDetail() {
       style={{ fontFamily: "Merriwether" }}
       className="p-10 text-lg md:text-2xl"
     >
-      <img src={recipe.image} alt="" />
+      <img className="hover:shadow-2xs" src={recipe.image} alt={recipe.image} />
       {/* title */}
       <h1 className="text-3xl font-bold text-amber-600">{recipe.title}</h1>
       {/* ingredients */}
