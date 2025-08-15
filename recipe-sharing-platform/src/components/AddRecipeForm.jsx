@@ -86,7 +86,7 @@ function AddRecipeForm() {
 
         <div>
           <label className="label-style">
-            Description <br />
+            Preparation steps <br />
             <textarea
               className="input-style "
               id="description"
