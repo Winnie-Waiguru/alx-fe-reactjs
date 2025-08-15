@@ -6,9 +6,7 @@ function AddRecipeForm() {
   const [description, setDecription] = useState("");
   const [errors, setErrors] = useState({});
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
+  const validate = () => {
     let newErrors = {};
 
     if (recipeTitle.trim() === "") {
@@ -32,6 +30,13 @@ function AddRecipeForm() {
       newErrors.description = "Description field cant't be empty";
     }
 
+    return newErrors;
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newErrors = validate();
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
