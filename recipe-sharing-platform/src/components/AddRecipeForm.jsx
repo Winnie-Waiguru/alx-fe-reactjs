@@ -35,7 +35,7 @@ function AddRecipeForm() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      return "Form submitted successfully";
+      return "Validate: Form submitted successfully";
     } else {
       setRecipeTitle("");
       setIngredients("");
