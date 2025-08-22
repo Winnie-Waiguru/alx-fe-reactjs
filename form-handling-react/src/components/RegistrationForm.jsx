@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 function RegistrationForm() {
-  const [nameValue, setNameValue] = useState("");
-  const [emailValue, setEmailValue] = useState("");
-  const [passwordValue, setPasswordValue] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!nameValue || !emailValue || !passwordValue) {
+    if (!username || !email || !password) {
       setMessage("Please fill all the fields");
     }
 
@@ -31,8 +31,8 @@ function RegistrationForm() {
             <input
               type="text"
               placeholder="John Doe"
-              value={nameValue}
-              onChange={(event) => setNameValue(event.target.value)}
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
             />
           </label>
         </div>
@@ -43,8 +43,8 @@ function RegistrationForm() {
             <input
               type="email"
               placeholder="johndoe@gmail.com"
-              value={emailValue}
-              onChange={(event) => setEmailValue(event.target.value)}
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             />
           </label>
         </div>
@@ -54,8 +54,8 @@ function RegistrationForm() {
             <br />
             <input
               type="password"
-              value={passwordValue}
-              onChange={(event) => setPasswordValue(event.target.value)}
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
           </label>
         </div>
