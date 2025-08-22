@@ -15,10 +15,10 @@ function RegistrationForm() {
     if (!username.trim()) {
       newErrors.username = "Please fill in the username";
     }
-    if (!password.trim()) {
+    if (!password) {
       newErrors.password = "Please fill in the password";
     }
-    if (!email.trim()) {
+    if (!email) {
       newErrors.email = "Please fill in the email";
     }
 
