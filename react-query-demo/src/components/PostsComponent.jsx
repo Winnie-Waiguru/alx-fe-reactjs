@@ -14,7 +14,7 @@ function PostsComponent() {
       queryKey: ["posts"], //unique key for this query
       queryFn: fetchPosts, // function that fetches the posts
       staleTime: 1000 * 60 * 10, //data considered stale after 10 min
-      gcTime: 1000 * 60 * 60, //data to be removed after 1 hour of inactivity
+      cacheTime: 1000 * 60 * 60, //data to be removed after 1 hour of inactivity
       placeholderData: keepPreviousData,
       refetchOnWindowFocus: false,
     });
